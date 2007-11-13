@@ -11,11 +11,11 @@ class PageEditDatesExtension < Radiant::Extension
   # end
 
   def activate
-    admin.page_edit_parts.add('Dates', 'edit_dates', :within => 'Metadata')
+    admin.page.edit.add('extended_metadata', 'edit_dates')
   end
 
   def deactivate
-    admin.page_edit_parts.remove('Dates', :within => 'Metadata')
+    admin.page.edit.form.delete 'edit_dates'
   end
 
 end
