@@ -4,7 +4,7 @@
 class PageEditDatesExtension < Radiant::Extension
   version "1.0"
   description "Permits to edit the published_at date for a page"
-  url "http://mat.cc/dev/radiant/page_edit_extension"
+  url "http://mat.cc/dev/index.cgi/page_edit_extension"
 
   # define_routes do |map|
   #   map.connect 'admin/page_edit_dates/:action', :controller => 'admin/page_edit_dates'
